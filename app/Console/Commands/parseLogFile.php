@@ -27,8 +27,7 @@ class parseLogFile extends Command
      */
     public function handle(ParseLog $parseLog)
     {
-       $result = $parseLog->parseFile("newfile.txt");
-        if($result){
+        if($parseLog->parseFile("newfile.txt")){
             $this->info("Parsing log is done well.");
         }
        return Command::SUCCESS;
