@@ -29,7 +29,10 @@ class parseLogFile extends Command
     {
         if($parseLog->parseFile("newfile.txt")){
             $this->info("Parsing log is done well.");
+            return Command::SUCCESS;
         }
-       return Command::SUCCESS;
+
+        return Command::FAILURE;
+
     }
 }
