@@ -8,10 +8,12 @@ use App\Http\Requests\LogFilterRequest;
 class LogSearchController extends Controller
 {
     private $repository;
+    
     public function __construct(LogRepository $repository)
     {
         $this->repository = $repository;
     }
+
     // show counts of DB records by given log info filters (parameters)
     public function showLogsCount(LogFilterRequest $request)
     {
