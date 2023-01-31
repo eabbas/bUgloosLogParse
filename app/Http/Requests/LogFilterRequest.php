@@ -24,8 +24,7 @@ class LogFilterRequest extends FormRequest
     public function rules()
     {
         return [
-            //
-            "serviceNames" => 'required|string',
+            "serviceNames" => 'nullable|string',
             "statusCode" => 'nullable|string',
             "startDate" => 'nullable|date',
             "endDate" => 'nullable|date',
@@ -34,11 +33,10 @@ class LogFilterRequest extends FormRequest
     public function messages()
     {
         return [
-            'serviceNames.nullable' => 'serviceNames must be string could be null',
-            'statusCode.nullable' => 'serviceNames must be string could be null',
-            'startDate.date' => 'startDate must be date could be null',
-            'endDate.date' => 'endDate must be date could be null',
+            'serviceNames.nullable' => 'serviceNames must be string, could be null',
+            'statusCode.nullable' => 'serviceNames must be string, could be null',
+            'startDate.date' => 'startDate must be date, could be null',
+            'endDate.date' => 'endDate must be date, could be null',
         ];
     }
-
 }
