@@ -5,7 +5,7 @@ this script is written by laravel framework ( https://laravel.com ).
 what does it do?
 It gets a large log file ( about 100 milion lines of different microservices logs ) and parses it then stores data in database as different fields. so you can do count on this database with different combination of filters.
 
-##How you can use this script?
+## How you can use this script?
 
     -in your webserver clone this script and update composer then generate a key finally serve to lunch:
 
