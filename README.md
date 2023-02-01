@@ -42,8 +42,8 @@ It gets a large log file ( about 100 milion lines of different microservices log
 
     -feature tests you can test the script:
 
-        -tests/api
-        -tests/command
+        -tests/Feature/api
+        -tests/Feature/command
 
         test with this command
 
