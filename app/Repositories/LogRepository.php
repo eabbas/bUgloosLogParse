@@ -31,6 +31,7 @@ class LogRepository implements LogRepositoryInterface
         if(isset($filters['startDate'])) $filtersQuery->where('loged_date','>=', $filters['startDate']);
         if(isset($filters['endDate'])) $filtersQuery->where('loged_date','<=', $filters['endDate']);
 
-        return json_encode($filtersQuery->count());
+        $result['count'] = $filtersQuery->count() ;
+        return json_encode($result);
     }
 }
